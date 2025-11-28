@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+torch
+torchvision
+torch-geometric
+transformers
+Pillow
+networkx
+kafka-python
+jupyter
