@@ -1,0 +1,23 @@
+\begin{center}
+\huge{\textbf{ABSTRACT}}
+\end{center}
+\addcontentsline{toc}{section}{Abstract}
+
+\vspace{1cm}
+
+ESG criteria have emerged as crucial benchmarks for evaluating how companies perform on sustainability and ethical fronts. Yet current assessment methods have significant limitations. Most ratings still depend heavily on what companies choose to disclose in their annual reports and periodic audits. This creates obvious problems: information arrives late, self-reporting introduces bias, and there's little real-time visibility into what's actually happening at corporate facilities.
+
+This Phase 1 report tackles these issues by designing a real-time ESG scoring system that combines satellite imagery with alternative data sources and modern deep learning approaches. Rather than waiting for quarterly disclosures, the system can continuously monitor environmental indicators visible from space while incorporating news sentiment, corporate registry updates, and governance events as they happen.
+
+The technical approach brings together several data streams that haven't been integrated before. Satellite imagery from sources like Sentinel-2 provides direct observation of corporate facilities—we can see emissions patterns, land use changes, and industrial expansion without relying on self-reports. To make sense of these images, we employ Vision Transformers, which have recently shown remarkable performance on remote sensing tasks. These visual features get combined with structured company data through Graph Neural Networks (specifically GraphSAGE and GAT architectures) that model how ESG risks propagate through sectoral relationships and supply chains.
+
+Our literature review covers existing ESG methodologies and their documented shortcomings, remote sensing applications in sustainability monitoring, recent advances in vision transformers and graph neural networks, and multi-modal learning frameworks. We formulate ESG scoring as a data fusion challenge with several technical hurdles: limited ground-truth labels, temporal dynamics in corporate behavior, and the computational demands of processing satellite imagery at scale.
+
+The proposed architecture uses event streaming (similar to Apache Kafka) to update scores incrementally as new data arrives. Rather than a black-box rating, the scoring engine produces transparent subscores for Environmental, Social, and Governance dimensions—each on a 0–100 scale with clear attribution to underlying features.
+
+During Phase 1, we evaluated available data sources including free satellite platforms (Sentinel-2, Landsat-8/9), alternative data APIs (OpenCorporates, news aggregators), and deep learning frameworks (PyTorch ecosystem, Hugging Face models). Initial prototyping confirmed the approach is technically feasible while revealing specific challenges around data acquisition, feature fusion strategies, and interpretability requirements.
+
+Phase 2 will implement the complete pipeline: data ingestion, ViT-based feature extraction from satellite images, GNN embedding generation, and real-time scoring. We'll validate first on synthetic data to establish baseline performance, then integrate real satellite imagery and test on actual companies. Success metrics include scoring accuracy, update latency, interpretability for stakeholders, and computational efficiency.
+
+This work contributes to computational sustainability by showing how deep learning and real-time data streams can make ESG assessment more transparent and objective—ultimately supporting better investment decisions and corporate accountability.
+
