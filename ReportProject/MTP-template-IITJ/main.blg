@@ -1,0 +1,23 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: titlePage.aux
+A level-1 auxiliary file: declaration.aux
+A level-1 auxiliary file: certificate.aux
+A level-1 auxiliary file: acknowledgments.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: abbreviations.aux
+A level-1 auxiliary file: mainReport.aux
+The style file: IEEEtran.bst
+Database file #1: refs.bib
+Warning--I didn't find a database entry for "artikis2015flink"
+Warning--I didn't find a database entry for "zhao2016kafka"
+Warning--I didn't find a database entry for "zhang2018spark"
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in liu2020fraud
+Warning--empty booktitle in carbone2015flink
+
+Done.
+(There were 5 warnings)

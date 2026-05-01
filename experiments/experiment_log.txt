@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/jojojoseph/Desktop/MTP-Project-ITJ---Real-Time-ESG-Scoring-Using-Satellite-Imagery-and-Alternative-Data/experiments/run_comprehensive_experiments.py", line 22, in <module>
+    from esg_pipeline.data_ingestion import (
+ImportError: cannot import name 'opencorporates_stub' from 'esg_pipeline.data_ingestion' (/Users/jojojoseph/Desktop/MTP-Project-ITJ---Real-Time-ESG-Scoring-Using-Satellite-Imagery-and-Alternative-Data/esg_pipeline/data_ingestion.py). Did you mean: 'fetch_opencorporates_stub'?

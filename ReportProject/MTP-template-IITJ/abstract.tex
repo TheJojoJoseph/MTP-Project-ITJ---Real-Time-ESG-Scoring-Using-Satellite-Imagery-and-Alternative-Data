@@ -1,0 +1,15 @@
+\begin{flushright}
+\huge{\section*{Abstract}}
+\end{flushright}
+\addcontentsline{toc}{section}{Abstract}
+
+Environmental, Social, and Governance (ESG) scoring has become increasingly critical for investors, regulators, and stakeholders seeking to evaluate corporate sustainability and ethical performance. Traditional ESG assessment methods rely primarily on self-reported corporate disclosures and periodic audits, which suffer from delays, potential biases, and limited real-time visibility into corporate operations. This thesis presents a novel real-time ESG scoring pipeline that leverages satellite imagery, alternative data sources, and advanced machine learning techniques to provide transparent, timely, and data-driven ESG assessments.
+
+The proposed system integrates multiple data streams including satellite imagery for environmental monitoring, corporate registry information, news sentiment analysis, and governance disclosures. At its core, the pipeline employs a Vision Transformer (ViT) to extract spatial features from satellite images of corporate facilities, capturing environmental indicators such as land use, emissions, and industrial activity. These visual features are combined with tabular alternative data through a Graph Neural Network (GNN) architecture—specifically GraphSAGE and Graph Attention Networks (GAT)—that models inter-company relationships based on sectoral affiliations and supply chain connections.
+
+To enable real-time responsiveness, the system implements a streaming architecture using Apache Kafka-like event processing, allowing ESG scores to be updated incrementally as new satellite observations, news events, or governance disclosures arrive. The scoring engine produces interpretable subscores for Environmental (E), Social (S), and Governance (G) dimensions, aggregating them into an overall ESG rating on a 0–100 scale.
+
+The prototype is implemented in Python using PyTorch, PyTorch Geometric, Hugging Face Transformers, and standard data science libraries. The architecture is modular and extensible, designed to accommodate real data sources such as Sentinel/Landsat imagery from Google Earth Engine, OpenCorporates registry APIs, and production-grade streaming platforms like Apache Flink or Spark Structured Streaming. Experimental results on synthetic data demonstrate the feasibility of the approach and provide a foundation for future research incorporating supervised learning, model interpretability (SHAP, Grad-CAM, GNN explainers), and fairness analysis across geographic regions and industry sectors.
+
+This work contributes to the emerging field of computational sustainability by demonstrating how multi-modal deep learning and real-time data processing can enhance transparency and objectivity in ESG assessment, supporting more informed decision-making for sustainable investment and corporate accountability.
+
